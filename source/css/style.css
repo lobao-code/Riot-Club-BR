@@ -24,10 +24,14 @@ p{
 	margin-bottom: 20px;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 /* Efeito Parallax
 -------------------------------*/
 
-.caixa1, .caixa2, .caixa3, .caixa4 {
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6, .caixa7, .caixa8, .caixa9, .caixa10 {
 	position: relative;
 	height: 100%;
 	opacity: 0.75;
@@ -52,6 +56,30 @@ p{
 
 .caixa4 {
 	background-image: url(../img/3.jpeg);
+}
+
+.caixa5 {
+	background-image: url(../img/4.jpeg);
+}
+
+.caixa6 {
+	background-image: url(../img/5.jpeg);
+}
+
+.caixa7 {
+	background-image: url(../img/7.jpeg);
+}
+
+.caixa8 {
+	background-image: url(../img/8.jpeg);
+}
+
+.caixa9 {
+	background-image: url(../img/9.jpeg);
+}
+
+.caixa10 {
+	background-image: url(../img/10.jpeg);
 }
 
 .conteudo-titulo {
