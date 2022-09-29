@@ -8,21 +8,58 @@
         <link rel="shortcut icon" type="image/x-icon" href="./source/img/Logos/favicon.ico">
         <link rel="stylesheet" type="text/css" href="./source/css/style.css" />
 
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <script type="text/javascript" src="./source/js/scripts.js"></script>
+
     </head>
 
     <body>
 
+        <div class="page">
+            <nav class="page__menu menu">
+              <ul class="menu__list r-list">
+                <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Início</a></li>
+                <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Quem Somos</a></li>
+                <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Streamers</a></li>
+                <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Parceiros</a></li>
+                <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Galeria</a></li>
+
+                <li class="menu__group"><a href="javascript:trocarIdioma('pt')" class="menu__link2 r-link text-underlined"><img alt="portugues" src="./source/img/Logos/portuguese.png" width="32px"></a></li>
+                <li class="menu__group"><a href="javascript:trocarIdioma('es')" class="menu__link2 r-link text-underlined"><img alt="espanhol" src="./source/img/Logos/espana.png" width="32px"></a></li>
+                <li class="menu__group"><a href="javascript:trocarIdioma('en')" class="menu__link2 r-link text-underlined"><img alt="ingles" src="./source/img/Logos/usa.png" width="32px"></a></li>
+              </ul>
+            </nav>
+        </div>
+
+        <div id="google_translate_element" class="boxTradutor"></div>
+
+        <!-- <a href="javascript:trocarIdioma('pt')"><img alt="portugues" src="images/pt.png"></a>
+        <a href="javascript:trocarIdioma('es')"><img alt="espanhol" src="images/es.png"></a>
+        <a href="javascript:trocarIdioma('en')"><img alt="ingles" src="images/en.png"></a> -->
+        
+        
+
         <div class="caixa1">
             <div class="conteudo-titulo">
-                <!-- <span class="titulo">PASSEIO DE BALÕES</span> -->
+                <div class="back"></div>
+
+                <!-- <div class="page">
+                    <nav class="page__menu menu">
+                      <ul class="menu__list r-list">
+                        <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Início</a></li>
+                        <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Quem Somos</a></li>
+                        <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Streamers</a></li>
+                        <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Parceiros</a></li>
+                        <li class="menu__group"><a href="#0" class="menu__link r-link text-underlined">Galeria</a></li>
+
+                        <li class="menu__group"><a href="javascript:trocarIdioma('pt')" class="menu__link2 r-link text-underlined"><img alt="portugues" src="./source/img/Logos/portuguese.png" width="32px"></a></li>
+                        <li class="menu__group"><a href="javascript:trocarIdioma('es')" class="menu__link2 r-link text-underlined"><img alt="espanhol" src="./source/img/Logos/espana.png" width="32px"></a></li>
+                        <li class="menu__group"><a href="javascript:trocarIdioma('en')" class="menu__link2 r-link text-underlined"><img alt="ingles" src="./source/img/Logos/usa.png" width="32px"></a></li>
+                      </ul>
+                    </nav>
+                </div> -->
+
             </div>
-        </div>
-    
-        <div class="conteudo">
-            <h3>Quem Somos</h3>
-            <p>Somos uma comunidade gamer que no meio de tantos altos e baixos nos estilos dos games, não largamos a paixão por automobilismo. Uma comunidade apaixonada e dedicada no que faz. Um comunidade que se divide entre o pessoal forfun que só arcade, jogos de corridas pra rir e trollar, ops. Uma rapaziada que leva a sério, se dedica horas e horas em simuladores buscando uma simulação perfeita, um tempo incrível e muita rivalidade na pista. Mas no fim, são todos Riot CLub, que acabam entrando em qualquer game que tenha uma lata velha, com motor e quatro rodas para dar boas risadas.</p>
-    
-            <p>Se sentiu em casa?! Acompanhe a lista de jogos e fotos que tiramos nos tempos livres. Entre em nosso Discord, nos acompanhe nas Redes Socias e venha sem um Riot também.</p>
         </div>
     
         <div class="caixa2">
@@ -30,18 +67,25 @@
                 <span class="titulo">Pegando a estrada</span>
             </div>
         </div>
-    
+
         <div class="conteudo">
-            <h3>Parallax</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
+            <h3>Quem Somos</h3>
+            <p>Somos uma comunidade gamer que no meio de tantos altos e baixos nos estilos dos games, não largamos a paixão por automobilismo. Uma comunidade apaixonada e dedicada no que faz. Um comunidade que se divide entre o pessoal forfun que só arcade, jogos de corridas pra rir e trollar, ops. Uma rapaziada que leva a sério, se dedica horas e horas em simuladores buscando uma simulação perfeita, um tempo incrível e muita rivalidade na pista. Mas no fim, são todos Riot CLub, que acabam entrando em qualquer game que tenha uma lata velha, com motor e quatro rodas para dar boas risadas.</p>
     
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
+            <p>Se sentiu em casa?! Acompanhe a lista de jogos e fotos que tiramos nos tempos livres. Entre em nosso Discord, nos acompanhe nas Redes Socias e venha sem um Riot também.</p>
         </div>
     
         <div class="caixa3">
             <div class="conteudo-titulo">
                 <span class="titulo">Pôr do sol</span>
             </div>
+        </div>
+
+        <div class="conteudo">
+            <h3>Parallax</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
+    
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur cursus purus eu semper. Quisque viverra sollicitudin tristique. Fusce eget ligula felis. Integer imperdiet, diam vitae mollis commodo, odio mauris imperdiet ante, sed tristique dolor tellus id arcu. Aenean commodo diam id nunc scelerisque, tempor accumsan dolor facilisis. Aliquam nec sapien at ipsum sollicitudin iaculis a at quam. Suspendisse laoreet ligula vel dui porta ullamcorper. Phasellus ultrices sit amet ligula ac lacinia. Aliquam pellentesque leo cursus quam sodales mattis. Aenean nec dignissim elit.</p>
         </div>
     
         <div class="caixa4">
@@ -89,6 +133,8 @@
         <footer>
             Todos os direitos reservados © Wild HTML™ 2021 ®
         </footer>
+
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     </body>
 
