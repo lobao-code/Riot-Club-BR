@@ -4,6 +4,7 @@ body, html {
 	margin: 0;
 	font: 16px "Lato", sans-serif;
 	color: #777;
+	width: 100%;
 	height: 100%;
 }
 
@@ -43,43 +44,43 @@ p{
 
 .caixa1 {
     background-color: yellow;
-	background-image: url(../img/Logo-GIF.gif);
+	background-image: url(../img/Logos/Logo-GIF.gif);
 }
 
 .caixa2 {
-	background-image: url(../img/1.jpeg);
+	background-image: url(../img/AssettoCorsa/001.jpg);
 }
 
 .caixa3 {
-	background-image: url(../img/2.jpeg);
+	background-image: url(../img/AssettoCorsaCompetizone/001.jpg);
 }
 
 .caixa4 {
-	background-image: url(../img/3.jpeg);
+	background-image: url(../img/DirtRally2.0/001.jpg);
 }
 
 .caixa5 {
-	background-image: url(../img/4.jpeg);
+	background-image: url(../img/EuroTruckSimulator/001.jpg);
 }
 
 .caixa6 {
-	background-image: url(../img/5.jpeg);
+	background-image: url(../img/F122/001.jpg);
 }
 
 .caixa7 {
-	background-image: url(../img/7.jpeg);
+	background-image: url(../img/ForzaHorizon/001.jpg);
 }
 
 .caixa8 {
-	background-image: url(../img/8.jpeg);
+	background-image: url(../img/GTAMods/001.jpg);
 }
 
 .caixa9 {
-	background-image: url(../img/9.jpeg);
+	background-image: url(../img/NeedForSpeedHeat/001.jpeg);
 }
 
 .caixa10 {
-	background-image: url(../img/10.jpeg);
+	background-image: url(../img/TheCrew2/001.jpg);
 }
 
 .conteudo-titulo {
@@ -105,4 +106,5 @@ footer {
     color: #000;
     width: 100%;    
     text-align: center;
+	text-shadow: #000 0.1em 0.1em 0.2em;
 }
