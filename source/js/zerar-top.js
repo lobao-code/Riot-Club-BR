@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let el = document.querySelector("body");
-    el.style.setProperty("top", "0px", "!important");
-});
+const troca = document.querySelector("element")
+console.log(troca)
+    element.style("top=40px")
+troca.innerHTML = element.style("top=0px")
