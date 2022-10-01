@@ -6,6 +6,6 @@
 # Projeto Iniciado
 
 ###### Estrutura Parallax - Completo
-###### Menu Horizontal - Completo
+###### Menu Horizontal - Completo (Atualizado)
 ###### Tradução - Corrigir/Remover erro do top 40px
 ###### Repositorio de imagens criado no GitHub

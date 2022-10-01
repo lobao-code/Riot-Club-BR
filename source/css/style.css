@@ -1,7 +1,8 @@
 /* Configuração padrão da página
 -------------------------------*/
 
-body, html {
+body,
+html {
 	margin: 0;
 	font: 16px "Lato", sans-serif;
 	color: #777;
@@ -22,7 +23,7 @@ h3 {
 	text-align: center;
 }
 
-p{
+p {
 	margin-bottom: 20px;
 }
 
@@ -33,160 +34,83 @@ p{
 /* Tradução 
 --------------------------------*/
 
-#google_translate_element, .goog-te-banner-frame, .goog-te-balloon-frame, #goog-gt-tt, .goog-te-balloon-frame, .goog-tooltip, .goog-tooltip:hover {
-    display:none !important;
+#google_translate_element,
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+#goog-gt-tt,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+	display: none !important;
 }
 
 /* Horizonta Menu CSSS 
 --------------------------------*/
 
-/*
-=====
-DEPENDENCES
-=====
-*/
-
-.r-link {
-	display: var(--rLinkDisplay, inline-flex) !important;
-  }
-  
-  .r-link[href] {
-	color: var(--rLinkColor) !important;
-	text-decoration: var(--rLinkTextDecoration, none) !important;
-  }
-  
-  .r-list {
-	padding-left: var(--rListPaddingLeft, 0) !important;
-	margin-top: var(--rListMarginTop, 0) !important;
-	margin-bottom: var(--rListMarginBottom, 0) !important;
-	list-style: var(--rListListStyle, none) !important;
-  }
-  
-  /*
-  =====
-  CORE STYLES
-  =====
-  */
-  
-  .menu {
-	--rLinkColor: var(--menuLinkColor, currentColor);
-  }
-  
-  .menu__link {
-	display: var(--menuLinkDisplay, block);
-  }
-  
-  /* 
-  focus state 
-  */
-  
-  .menu__link:focus {
-	outline: var(--menuLinkOutlineWidth, 2px) solid
-	  var(--menuLinkOutlineColor, currentColor);
-	outline-offset: var(--menuLinkOutlineOffset);
-  }
-  
-  /* 
-  fading siblings
-  */
-  
-  .menu:hover .menu__link:not(:hover) {
-	--rLinkColor: var(--menuLinkColorUnactive, rgba(22, 22, 22, 0.35));
-  }
-  
-  /*
-  =====
-  PRESENTATION STYLES
-  =====
-  */
-  
-  .menu {
+nav ul {
+	list-style: none;
+	padding-left: 0;
 	margin-top: 0;
-	background-color: var(--menuBackgroundColor, #f0f0f0);
-	box-shadow: var(
-	  --menuBoxShadow,
-	  0 1px 3px 0 rgba(0, 0, 0, 0.12),
-	  0 1px 2px 0 rgba(0, 0, 0, 0.24)
-	);
-  }
-  
-  .menu__list {
-	display: flex;
-	margin-left: 20%;
-	margin-right: 20%;
-  }
-  
-  .menu__link {
-	padding: var(--menuLinkPadding, 1.5rem 2.5rem);
-	font-weight: 700;
-	text-transform: uppercase;
-  }
+	margin-bottom: 0;
+}
 
-  .menu__link2 {
-	padding: var(--menuLinkPadding, 1rem 1rem);
+.nav {
+	width: 100%;
+	margin: 0 auto;
+	background: transparent;
+	color: rgba(0, 0, 0, 1);
+}
+
+.nav a {
+	display: block;
+	padding: 0 51.17px;
+	line-height: inherit;
+	cursor: pointer;
+}
+
+.nav__menu {
+	line-height: 50px;
 	font-weight: 700;
 	text-transform: uppercase;
-  }
-  
-  /* 
-  =====
-  TEXT UNDERLINED
-  =====
-  */
-  
-  .text-underlined {
+}
+
+.nav__menu-item {
+	display: inline-block;
 	position: relative;
-	overflow: hidden;
-  
-	will-change: color;
-	transition: color 0.25s ease-out;
-  }
-  
-  .text-underlined::before,
-  .text-underlined::after {
-	content: "";
-	width: 0;
-	height: 3px;
-	background-color: var(--textUnderlinedLineColor, currentColor);
-  
-	will-change: width;
-	transition: width 0.1s ease-out;
-  
-	position: absolute;
-	bottom: 0;
-  }
-  
-  .text-underlined::before {
-	left: 50%;
-	transform: translateX(-50%);
-  }
-  
-  .text-underlined::after {
-	right: 50%;
-	transform: translateX(50%);
-  }
-  
-  .text-underlined:hover::before,
-  .text-underlined:hover::after {
-	width: 100%;
-	transition-duration: 0.2s;
-  }
+}
+
+.nav__menu-item:hover {
+	background-color: rgba(255, 255, 0, 0.7);
+}
+
+.nav__menu-item:hover .nav__submenu {
+	display: block;
+}
 
 /* Efeito Parallax
 -------------------------------*/
 
-.caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6, .caixa7, .caixa8, .caixa9, .caixa10 {
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4,
+.caixa5,
+.caixa6,
+.caixa7,
+.caixa8,
+.caixa9,
+.caixa10 {
 	position: relative;
 	height: 100%;
 	opacity: 0.75;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-attachment: fixed; 
+	background-attachment: fixed;
 }
 
 .caixa1 {
-    background-color: yellow;
+	background-color: yellow;
 	background-image: url(https://github.com/morkitus/bancoimg/blob/main/Logos/Logo-GIF.gif?raw=true);
 }
 
@@ -244,10 +168,10 @@ DEPENDENCES
 }
 
 footer {
-    bottom: 0;
-    background-color: #fff;
-    color: #000;
-    width: 100%;    
-    text-align: center;
+	bottom: 0;
+	background-color: #fff;
+	color: #000;
+	width: 100%;
+	text-align: center;
 	text-shadow: #000 0.1em 0.1em 0.2em;
 }
