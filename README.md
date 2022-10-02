@@ -7,5 +7,5 @@
 
 ###### Estrutura Parallax - Completo
 ###### Menu Horizontal - Completo (Atualizado)
-###### Tradução - Corrigir/Remover erro do top 40px
+###### Tradução - Corrigir erro 40px (Corrigido)
 ###### Repositorio de imagens criado no GitHub
