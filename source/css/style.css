@@ -1,13 +1,19 @@
-/* Configuração padrão da página
--------------------------------*/
+/*
+#################################
+# Configuração padrão da página #
+#################################
+*/
 
-body,
-html {
+body, html {
 	margin: 0;
 	font: 16px "Lato", sans-serif;
 	color: #777;
 	width: 100%;
 	height: 100%;
+	padding: 0;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
 }
 
 .linha {
@@ -16,7 +22,7 @@ html {
 
 .conteudo {
 	color: #777;
-	background-color: white;
+	background-color: #fff;
 	text-align: justify;
 	padding: 50px 80px;
 }
@@ -29,27 +35,89 @@ h3 {
 
 p {
 	margin-bottom: 20px;
+	color: #000;
+	text-shadow: #000 0.1em 0.1em 0.2em;
+}
+
+p::first-letter {
+	font-size: 2rem;
+	font-weight: bold;
+	color: red;
+	text-shadow: #000 0.1em 0.1em 0.2em;
 }
 
 ::-webkit-scrollbar {
 	display: none;
 }
 
-/* Tradução 
---------------------------------*/
+/*
+################################
+########### Tradução ###########
+################################
+*/
 
-#google_translate_element,
-.goog-te-banner-frame,
-.goog-te-balloon-frame,
-#goog-gt-tt,
-.goog-te-balloon-frame,
-.goog-tooltip,
-.goog-tooltip:hover {
+#google_translate_element, .goog-te-banner-frame, .goog-te-balloon-frame, #goog-gt-tt, .goog-te-balloon-frame, .goog-tooltip, .goog-tooltip:hover {
 	display: none !important;
 }
 
-/* Horizonta Menu CSSS 
---------------------------------*/
+/*
+################################
+######## Slide Image BG ########
+################################
+*/
+
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+}
+
+#radio1:checked ~ .first, #radio4:checked ~ .first, #radio7:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first, #radio5:checked ~ .first, #radio8:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first, #radio6:checked ~ .first, #radio9:checked ~ .first {
+    margin-left: -50%;
+}
+
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/*
+################################
+##### Horizontal Menu CSSS #####
+################################
+*/
 
 nav ul {
 	list-style: none;
@@ -91,19 +159,13 @@ nav ul {
 	display: block;
 }
 
-/* Efeito Parallax
--------------------------------*/
+/*
+#################################
+######## Efeito Parallax ########
+#################################
+*/
 
-.caixa1,
-.caixa2,
-.caixa3,
-.caixa4,
-.caixa5,
-.caixa6,
-.caixa7,
-.caixa8,
-.caixa9,
-.caixa10 {
+.caixa1, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6, .caixa7, .caixa8, .caixa9, .caixa10 {
 	position: relative;
 	height: 100%;
 	opacity: 0.75;
@@ -118,7 +180,7 @@ nav ul {
 	background-image: url(https://github.com/morkitus/bancoimg/blob/main/Logos/Logo-GIF.gif?raw=true);
 }
 
-.caixa2 {
+/* .caixa2 {
 	background-image: url(https://github.com/morkitus/bancoimg/blob/main/AssettoCorsa/001.jpg?raw=true);
 }
 
@@ -152,7 +214,7 @@ nav ul {
 
 .caixa10 {
 	background-image: url(https://github.com/morkitus/bancoimg/blob/main/TheCrew2/001.jpg?raw=true);
-}
+} */
 
 .conteudo-titulo {
 	position: absolute;
@@ -172,10 +234,6 @@ nav ul {
 }
 
 footer {
-	/*bottom: 0;
-	background-color: #fff;
-	width: 100%;
-	text-align: center;*/
 	text-shadow: #000 0.1em 0.1em 0.2em;
 	text-align: center;
     font-weight: bold;
