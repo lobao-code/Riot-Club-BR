@@ -106,7 +106,7 @@ p::first-letter {
 }
 
 .navigation-auto div {
-    border: 2px solid #20a6ff;
+    /* border: 2px solid #20a6ff; */
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -114,50 +114,71 @@ p::first-letter {
 }
 
 /*
-################################
-##### Horizontal Menu CSSS #####
-################################
+###############################
+##### Horizontal Menu CSS #####
+###############################
 */
 
-nav ul {
-	list-style: none;
-	padding-left: 0;
-	margin-top: 0;
-	margin-bottom: 0;
-}
+nav{
+	display: flex;
+	justify-content: center;
+ }
 
-.nav {
-	width: 100%;
-	margin: 0 auto;
-	background: transparent;
-	color: rgba(0, 0, 0, 1);
-}
-
-.nav a {
-	display: block;
-	padding: 0 48px;
-	line-height: inherit;
-	cursor: pointer;
-}
-
-.nav__menu {
-	line-height: 50px;
-	font-weight: 700;
+#navegacao {
+	font-size: 20px;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
-.nav__menu-item {
-	display: inline-block;
-	position: relative;
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 1080;
+	height: 1%;
+	background: #fff;
+	justify-content: center;
+	align-items: center;
 }
 
-.nav__menu-item:hover {
-	background-color: rgba(255, 255, 0, 0.7);
+ul li {
+	float: left;
+	justify-content: center;
+	align-items: center;
 }
 
-.nav__menu-item:hover .nav__submenu {
+ul a.horz {
 	display: block;
+	padding: 0 2em;
+	line-height: 2.2em;
+	text-decoration: none;
+	color: #000;
 }
+
+ul .primeiro a.horz {
+	background: #fff;
+}
+
+ul a.horz:hover {
+	text-shadow: #000 0.1em 0.1em 0.2em;
+	color: #fff;
+	background: rgba(255, 0, 0, 0.75);
+}
+
+#home #navegacao .home a.horz, #quem-somos #navegacao .quem-somos a.horz, #streamers #navegacao .streamers a.horz, #parceiros #navegacao .parceiros a.horz, #galeria #navegacao .galeria a.horz, #fale-conosco #navegacao .fale-conosco a.horz {
+	background-position: right bottom;
+	background-color: rgba(255, 255, 0, 1);
+	color: #000;
+	text-shadow: #000 0.1em 0.1em 0.2em;
+}
+
+/*
+###############################
+###### Vertical Menu CSS ######
+###############################
+*/
+
+
 
 /*
 #################################
@@ -226,9 +247,9 @@ nav ul {
 
 .conteudo-titulo span.titulo {
 	color: #fff;
-	background-color: #111;
+	background-color: #000;
 	padding: 18px;
-	font-size: 25px;
+	font-size: 50px;
 	letter-spacing: 5px;
 	text-transform: uppercase;
 }
