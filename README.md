@@ -6,9 +6,12 @@
 # Projeto Iniciado
 
 ###### Estrutura Parallax - Completo
-###### Menu Horizontal - Completo (Atualizado)
+###### Menu Horizontal - Finalizado
+###### Menu Vertical - Finalizado
 ###### Tradução - Corrigir erro 40px (Corrigido)
 ###### Repositorio de imagens criado no GitHub
 ###### Efeito Carrossel implementado na página
-###### Atualização de Menus (em breve)
-###### Estruturação das páginas Internas (em breve)
+###### Atualização de Menus - Finalizado
+###### Estruturação das páginas Internas (iniciado)
+###### Home - Finalizado
+###### Quem Somos - Finalizado
