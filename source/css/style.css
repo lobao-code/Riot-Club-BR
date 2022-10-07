@@ -11,7 +11,6 @@ body, html {
 	width: 100%;
 	height: 100%;
 	padding: 0;
-	/* display: flex; */
 	justify-content: center;
 	align-items: center;
 }
@@ -106,7 +105,6 @@ p::first-letter {
 }
 
 .navigation-auto div {
-    /* border: 2px solid #20a6ff; */
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -167,7 +165,7 @@ ul a.horz:hover {
 
 #home #navegacao .home a.horz, #quem-somos #navegacao .quem-somos a.horz, #streamers #navegacao .streamers a.horz, #parceiros #navegacao .parceiros a.horz, #galeria #navegacao .galeria a.horz, #fale-conosco #navegacao .fale-conosco a.horz {
 	background-position: right bottom;
-	background-color: rgba(255, 255, 0, 1);
+	background-color: rgba(255, 255, 0, 0.75);
 	color: #000;
 	text-shadow: #000 0.1em 0.1em 0.2em;
 }
@@ -182,13 +180,14 @@ ul a.horz:hover {
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
-  }
+	z-index: 1;
+}
   
-  .menu-toggle {
+.menu-toggle {
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
-	background-color: #1ef0a0;
+	background-color: rgba(255, 0, 0, 1);
 	box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
 	position: absolute;
 	z-index: 5;
@@ -196,60 +195,72 @@ ul a.horz:hover {
 	right: 0;
 	display: table;
 	text-align: center;
-  }
-  .menu-toggle .fa {
+}
+
+.menu-toggle .fa {
 	color: #fff;
 	font-size: 2em;
 	display: table-cell;
 	vertical-align: middle;
 	transition: 0.4s;
-  }
-  .menu-toggle.open .fa {
+}
+
+.menu-toggle.open .fa {
 	transform: rotate(135deg);
-  }
+}
   
-  .btn-app {
+.btn-app {
 	width: 2.5em;
 	height: 2.5em;
 	border-radius: 50%;
 	position: absolute;
-	background-color: #4644fd;
-	color: #fff;
+	background-color: rgba(255, 255, 0, 1);
+	color: #000;
 	text-align: center;
-  }
-  .btn-app .fa {
+}
+
+.btn-app .fa {
 	line-height: 2.5em;
-  }
+}
   
-  .open .btn-app {
+.open .btn-app {
 	box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
-  }
+}
   
-  .menu-round {
+.menu-round {
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	z-index: 3;
-  }
-  .menu-round .btn-app {
+}
+
+.menu-round .btn-app {
 	bottom: 0.25em;
 	right: 0.25em;
 	transition: 0.4s;
-  }
-  .menu-round.open .btn-app:nth-of-type(1) {
+}
+
+.menu-round.open .btn-app:nth-of-type(1) {
 	right: 0.5em;
 	bottom: 4.25em;
 	transition-delay: 0.2s;
-  }
-  .menu-round.open .btn-app:nth-of-type(2) {
+}
+
+.menu-round.open .btn-app:nth-of-type(2) {
 	right: 3.5em;
 	bottom: 3.5em;
 	transition-delay: 0.1s;
-  }
-  .menu-round.open .btn-app:nth-of-type(3) {
+}
+
+.menu-round.open .btn-app:nth-of-type(3) {
 	right: 4.25em;
 	bottom: 0.5em;
-  }
+}
+
+a.fa {
+	width: 16x;
+	height: 16px;
+}
 
 /*
 #################################
@@ -271,42 +282,6 @@ ul a.horz:hover {
 	background-color: yellow;
 	background-image: url(https://github.com/morkitus/bancoimg/blob/main/Logos/Logo-GIF.gif?raw=true);
 }
-
-/* .caixa2 {
-	background-image: url(https://github.com/morkitus/bancoimg/blob/main/AssettoCorsa/001.jpg?raw=true);
-}
-
-.caixa3 {
-	background-image: url(https://github.com/morkitus/bancoimg/blob/main/AssettoCorsaCompetizone/001.jpg?raw=true);
-}
-
-.caixa4 {
-	background-image: url(https://github.com/morkitus/bancoimg/blob/main/DirtRally2.0/001.jpg?raw=true);
-}
-
-.caixa5 {
-	background-image: url(https://github.com/morkitus/bancoimg/blob/main/EuroTruckSimulator/001.jpg?raw=true);
-}
-
-.caixa6 {
-	background-image: url(https://github.com/morkitus/bancoimg/blob/main/F122/001.jpg?raw=true);
-}
-
-.caixa7 {
-	background-image: url(https://github.com/morkitus/bancoimg/blob/main/ForzaHorizon/001.jpg?raw=true);
-}
-
-.caixa8 {
-	background-image: url(https://github.com/morkitus/bancoimg/blob/main/GTAMods/001.jpg?raw=true);
-}
-
-.caixa9 {
-	background-image: url(https://github.com/morkitus/bancoimg/blob/main/NeedForSpeedHeat/001.jpeg?raw=true);
-}
-
-.caixa10 {
-	background-image: url(https://github.com/morkitus/bancoimg/blob/main/TheCrew2/001.jpg?raw=true);
-} */
 
 .conteudo-titulo {
 	position: absolute;
