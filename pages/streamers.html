@@ -23,11 +23,11 @@
 
     <body id="BD">
 
-        <nav id="quem-somos">
+        <nav id="streamers">
             <ul id="navegacao">
                 <li class="home primeiro"><a class="horz" href="../index.html">Início</a></li>
                 <li class="quem-somos"><a class="horz" href="../pages/quem-somos.html">Quem Somos</a></li>
-                <li class="streamers"><a class="horz" href="../pages/streamers.html">Streamers</a></li>
+                <li class="streamers"><a class="horz" href="#">Streamers</a></li>
                 <li class="parceiros">
                     <a href="" class="dropbtn horz">Parceiros</a>
                     <div class="dropdown-content">
@@ -64,7 +64,7 @@
 
         <div id="google_translate_element" class="boxTradutor"></div>
 
-        <div id="quem-somos" class="caixa1"></div>
+        <div id="streamers" class="caixa1"></div>
 
         <div class="linha"></div>
 
@@ -80,20 +80,20 @@
 
                 <!--Slide Images-->
                 <div class="slide first">
-                    <img src="https://github.com/morkitus/bancoimg/blob/main/AssettoCorsa/001.jpg?raw=true" alt="Imagem 1" />
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/AssettoCorsa/003.jpg?raw=true" alt="Imagem 1" />
                 </div>
                 <div class="slide">
-                    <img src="https://github.com/morkitus/bancoimg/blob/main/AssettoCorsaCompetizone/001.jpg?raw=true" alt="Imagem 2" />
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/AssettoCorsaCompetizone/003.jpg?raw=true" alt="Imagem 2" />
                 </div>
                 <div class="slide">
-                    <img src="https://github.com/morkitus/bancoimg/blob/main/DirtRally2.0/001.jpg?raw=true" alt="Imagem 3" />
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/DirtRally2.0/003.jpg?raw=true" alt="Imagem 3" />
                 </div>
                 <!--End Slide Images--> 
 
             </div>
 
             <div class="conteudo-titulo">
-                <span class="titulo">Quem Somos</span>
+                <span class="titulo">Streamers</span>
             </div>
 
         </div>
@@ -103,9 +103,22 @@
         <div class="conteudo" style="background-color: rgba(0, 0, 0, 0.75);">
 
             <hr>
-            <p>Somos uma comunidade gamer que no meio de tantos altos e baixos nos estilos dos games, não largamos a paixão por automobilismo. Uma comunidade apaixonada e dedicada no que faz. Um comunidade que se divide entre o pessoal forfun que só arcade, jogos de corridas pra rir e trollar, ops. Uma rapaziada que leva a sério, se dedica horas e horas em simuladores buscando uma simulação perfeita, um tempo incrível e muita rivalidade na pista. Mas no fim, são todos Riot Club, que acabam entrando em qualquer game que tenha uma lata velha, com motor e quatro rodas para dar boas risadas.</p>
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
 
-            <p>Se sentiu em casa?! Acompanhe a lista de jogos e fotos que tiramos nos tempos livres. Entre em nosso Discord, nos acompanhe nas Redes Socias e venha sem um Riot também.</p>
+            <!-- Load the Twitch embed JavaScript file -->
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+            <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+            <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+                width: 854,
+                height: 480,
+                channel: "RiotClubBR",
+                // Only needed if this page is going to be embedded on other websites
+                parent: ["embed.example.com", "othersite.example.com"]
+            });
+            </script>
             <hr>
 
         </div>
@@ -124,13 +137,13 @@
 
                 <!--Slide Images-->
                 <div class="slide first">
-                    <img src="https://github.com/morkitus/bancoimg/blob/main/EuroTruckSimulator/001.jpg?raw=true" alt="Imagem 4" />
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/EuroTruckSimulator/003.jpg?raw=true" alt="Imagem 4" />
                 </div>
                 <div class="slide">
-                    <img src="https://github.com/morkitus/bancoimg/blob/main/F122/001.jpg?raw=true" alt="Imagem 5" />
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/F122/003.jpg?raw=true" alt="Imagem 5" />
                 </div>
                 <div class="slide">
-                    <img src="https://github.com/morkitus/bancoimg/blob/main/ForzaHorizon/001.jpg?raw=true" alt="Imagem 6" />
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/ForzaHorizon/003.jpg?raw=true" alt="Imagem 6" />
                 </div>
                 <!--End Slide Images-->
                 
@@ -142,9 +155,6 @@
 
         <div class="conteudo" style="background-color: rgba(0, 0, 0, 0.75);">
             <hr>
-            <p>Se o cheiro de gasolina lhe parece sedutor, se o ronco do motor lhe faz arrepiar e se há altas doses de adrenalina correndo em suas veias a mais de 100 batimentos por minuto, pois é meu caro, nós temos muito em comum e há uma comunidade onde a paixão por carros é a regra mais importante, seja casual, ou no mais alto nível do simracing, todos são bem-vindos aqui na RiotClub.</p>
-
-            <p>Independente do jogo e do estilo, se tem um carro, nós estaremos lá, mas deixamos claro que a zueira sempre terá o seu espaço, o companheirismo será nosso norte e o respeito o nosso guia por essa longa estrada dos games, nosso objetivo maior é simplesmente nos divertir na companhia dos nossos amigos, vagando de jogo em jogo, testando nosso rivais, trollando o amiguinho distraído e rindo da noobice alheia, pode vir você também e venha fazer parte da nossa família, e para não perder as novidades nos siga nas nossas redes sociais.</p>
             <hr>
         </div>
 
@@ -162,18 +172,94 @@
 
                 <!--Slide Images-->
                 <div class="slide first">
-                    <img src="https://github.com/morkitus/bancoimg/blob/main/GTAMods/001.jpg?raw=true" alt="Imagem 7" />
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/NeedForSpeedHeat/003.jpeg?raw=true" alt="Imagem 7" />
                 </div>
                 <div class="slide">
-                    <img src="https://github.com/morkitus/bancoimg/blob/main/NeedForSpeedHeat/001.jpeg?raw=true" alt="Imagem 8" />
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/TheCrew2/003.jpg?raw=true" alt="Imagem 8" />
                 </div>
                 <div class="slide">
-                    <img src="https://github.com/morkitus/bancoimg/blob/main/TheCrew2/001.jpg?raw=true" alt="Imagem 9" />
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/AssettoCorsa/004.jpg?raw=true" alt="Imagem 9" />
                 </div>
                 <!--End Slide Images--> 
 
             </div>
 
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="conteudo" style="background-color: rgba(0, 0, 0, 0.75);">
+            <hr>
+            <hr>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="caixa4 slider">
+
+            <div class="slides">
+
+                <!--Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio10">
+                <input type="radio" name="radio-btn" id="radio11">
+                <input type="radio" name="radio-btn" id="radio12">
+                <!--End Radio Buttons-->
+
+                <!--Slide Images-->
+                <div class="slide first">
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/AssettoCorsaCompetizone/004.jpg?raw=true" alt="Imagem 10" />
+                </div>
+                <div class="slide">
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/F122/004.jpg?raw=true" alt="Imagem 11" />
+                </div>
+                <div class="slide">
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/ForzaHorizon/004.jpg?raw=true" alt="Imagem 12" />
+                </div>
+                <!--End Slide Images--> 
+
+            </div>
+
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="conteudo" style="background-color: rgba(0, 0, 0, 0.75);">
+            <hr>
+            <hr>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="caixa4 slider">
+
+            <div class="slides">
+
+                <!--Radio Buttons-->
+                <input type="radio" name="radio-btn" id="radio13">
+                <input type="radio" name="radio-btn" id="radio14">
+                <input type="radio" name="radio-btn" id="radio15">
+                <!--End Radio Buttons-->
+
+                <!--Slide Images-->
+                <div class="slide first">
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/NeedForSpeedHeat/004.jpeg?raw=true" alt="Imagem 13" />
+                </div>
+                <div class="slide">
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/AssettoCorsa/005.jpg?raw=true" alt="Imagem 14" />
+                </div>
+                <div class="slide">
+                    <img src="https://github.com/morkitus/bancoimg/blob/main/F122/005.jpg?raw=true" alt="Imagem 15" />
+                </div>
+                <!--End Slide Images--> 
+
+            </div>
+
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="conteudo" style="background-color: rgba(0, 0, 0, 0.75);">
+            <hr>
         </div>
 
         <footer>
