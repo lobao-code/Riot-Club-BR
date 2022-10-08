@@ -3,6 +3,7 @@
 var comboGoogleTradutor = null; //Varialvel global
 
 function googleTranslateElementInit() {
+    someTop();
     new google.translate.TranslateElement({
         pageLanguage: 'pt',
         includedLanguages: 'pt,en,es',
