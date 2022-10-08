@@ -57,6 +57,18 @@ label.label::first-letter {
 	text-shadow: #000 0.1em 0.1em 0.2em;
 }
 
+h1 {
+	color: #fff;
+	text-shadow: #000 0.1em 0.1em 0.2em;
+}
+
+h1::first-letter {
+	font-size: 2rem;
+	font-weight: bold;
+	color: red;
+	text-shadow: #000 0.1em 0.1em 0.2em;
+}
+
 ::-webkit-scrollbar {
 	display: none;
 }
