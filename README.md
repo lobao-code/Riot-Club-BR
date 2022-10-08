@@ -5,7 +5,7 @@
 
 # Projeto Iniciado
 
-###### Estrutura Parallax - Completo
+###### Estrutura Parallax - Finalizado
 ###### Menu Horizontal - Finalizado
 ###### Menu Vertical - Finalizado
 ###### Tradução - Corrigir erro 40px (Corrigido)
@@ -15,3 +15,5 @@
 ###### Estruturação das páginas Internas (iniciado)
 ###### Home - Finalizado
 ###### Quem Somos - Finalizado
+###### Fale Conosco - Finalizado
+###### @Hugo - Iniciar back do Formulário
