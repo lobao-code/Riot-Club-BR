@@ -45,6 +45,11 @@ p::first-letter {
 	text-shadow: #000 0.1em 0.1em 0.2em;
 }
 
+label.label {
+	color: #fff;
+	text-shadow: #000 0.1em 0.1em 0.2em;
+}
+
 label.label::first-letter {
 	font-size: 2rem;
 	font-weight: bold;
@@ -152,6 +157,12 @@ ul li {
 	align-items: center;
 }
 
+ul.drop {
+	float: left;
+	justify-content: center;
+	align-items: center;
+}
+
 ul a.horz {
 	display: block;
 	padding: 0 2em;
@@ -175,6 +186,55 @@ ul a.horz:hover {
 	background-color: rgba(255, 255, 0, 0.75);
 	color: #000;
 	text-shadow: #000 0.1em 0.1em 0.2em;
+}
+
+.dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.parceiros:hover .dropbtn {
+	color: #fff;
+	background-color: rgba(255, 0, 0, 0.75);
+	text-shadow: #000 0.1em 0.1em 0.2em;
+}
+
+.parceiros:hover .dropdown-content {
+	text-shadow: #000 0.1em 0.1em 0.2em;
+	color: #fff;
+	display: block;
+}
+
+li.parceiros {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: #fff;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #fff;
+}
+
+.parceiros:hover .dropdown-content {
+	display: block;
 }
 
 /*
@@ -315,6 +375,7 @@ a.fa {
 }
 
 footer {
+	background-color: rgba(0, 0, 0, 0.75);
 	text-shadow: #000 0.1em 0.1em 0.2em;
 	text-align: center;
     font-weight: bold;
